@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1486362949994" stop="1486362960205" version="1.5.0" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1486362951387" stop="1486362958030" status="passed">
+            <name>Test001NavigateToGoogleWebSite</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="MyAllureGradleTestNGPackage.MyAllureReportsTest"/>
+                <label name="testMethod" value="Test001NavigateToGoogleWebSite"/>
+                <label name="host" value="SIDDHIVINAYAKA"/>
+                <label name="thread" value="16856@SIDDHIVINAYAKA.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

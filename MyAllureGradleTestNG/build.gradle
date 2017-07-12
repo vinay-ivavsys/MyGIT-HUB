@@ -1,0 +1,56 @@
+
+//
+//apply plugin: 'java'
+//sourceCompatibility = JavaVersion.VERSION_1_8
+//targetCompatibility = JavaVersion.VERSION_1_8
+//version = '1.0-SNAPSHOT'
+//defaultTasks 'clean', 'test'
+
+//repositories {
+    //mavenCentral()
+    //jcenter()
+//}
+
+
+//configurations {
+//    agent
+//}
+
+//dependencies {
+    //agent "org.aspectj:aspectjweaver:1.8.10"
+    //testCompile "ru.yandex.qatools.allure:allure-testng-adaptor:1.5.0"
+//}
+
+
+//test.doFirst {
+  //  jvmArgs "-javaagent:${configurations.agent.singleFile}"
+//}
+
+//test {
+//    useTestNG() {
+//		suiteXmlFiles << new File("MyTestNG.xml") //This is how to add custom testng.xml
+//    }
+//}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+}
+
+apply plugin: 'java'
+
+allure {
+    aspectjweaver = true
+
+    // Choose your test framework. 
+    //junit = true
+    junit = false
+    testNG = true
+    spock = false
+
+    // Choose if you're using Geb for web tests
+    //geb = true
+}
+
